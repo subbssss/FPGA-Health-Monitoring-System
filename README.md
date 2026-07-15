@@ -114,13 +114,14 @@ Formats and renders system state and alert messages onto the connected LCD displ
 
 ## FPGA Block Diagram
 
-![FPGA Block Diagram](results/fpga_block_diagram.jpeg)
+<img width="1304" height="599" alt="image" src="https://github.com/user-attachments/assets/ffeb0201-050f-4cb7-8de5-3f240eb538fa" />
+
 
 ---
 
 ## RTL / Schematic Design
 
-![Schematic Design](results/schematic_design.jpeg)
+<img width="1532" height="462" alt="image" src="https://github.com/user-attachments/assets/d0bcb0f9-5e2d-4ac9-be48-00534554ff2a" />
 
 ---
 
@@ -128,7 +129,7 @@ Formats and renders system state and alert messages onto the connected LCD displ
 
 The waveform demonstrates the CRITICAL alert condition where all monitored abnormal inputs are activated (`sw[7:0] = 11111111`). The system generates a high health-risk score, activates the buzzer, and triggers the CRITICAL warning state.
 
-![Simulation Waveform](results/simulation_waveform.jpeg)
+<img width="1571" height="756" alt="image" src="https://github.com/user-attachments/assets/298ae190-fb32-4b23-9ad2-62aa4a303e71" />
 
 ---
 
@@ -150,17 +151,17 @@ Notebook:
 ### Normal State
 All monitored parameters fall within acceptable ranges; the system operates without generating any alerts.
 
-![Normal State](results/output_states/normal_state.jpeg)
+<img width="1280" height="959" alt="image" src="https://github.com/user-attachments/assets/75d7122c-ae54-4c48-ab7c-8903d525d507" />
 
 ### HELP Alert State
 Activated when a moderately abnormal reading persists beyond the configured verification window, prompting a moderate-level alert response.
 
-![HELP State](results/output_states/help_state.jpeg)
+<img width="1280" height="959" alt="image" src="https://github.com/user-attachments/assets/a94df79b-f890-4e4b-82f6-edfda9feeaba" />
 
 ### CRITICAL Alert State
 Triggered by severe or dangerous parameter values that persist, resulting in full activation of all warning outputs — LEDs, buzzer, and LCD notification.
 
-![CRITICAL State](results/output_states/critical_state.jpeg)
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/2fea86c8-acab-472f-8ee2-c498a54de29f" />
 
 ---
 
